@@ -1,0 +1,7 @@
+- name: Some Playbook
+  host: all
+  tasks:
+    - name: Print Hello World
+      ansible.builtin.debug:
+        nsg: Hello world
+
