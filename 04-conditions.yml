@@ -1,0 +1,12 @@
+
+- name: condition Demo
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: print veggies
+      ansible.builtin.debug:
+        msg: Veggies names - Carrot
+
+    - name: print fruits
+      ansible.builtin.debug:
+        msg: Veggies names - Orange
