@@ -1,0 +1,7 @@
+- name: Parallel
+  hosts: all
+  tasks:
+    - name: sleep
+      ansible.builtin.shell: sleep 30
+
+# use -f 10 to run this paralell on 10 servers, by default it is 5
