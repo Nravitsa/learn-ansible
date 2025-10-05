@@ -1,0 +1,19 @@
+
+- name: Loop Demo
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: print veggies
+      ansible.builtin.debug:
+        msg: Veggies names - {{ item }}
+      loop:
+        - carrot
+        - Tomato
+
+    - name: print veggies and price
+      ansible.builtin.debug:
+        msg: Veggies names - {{ item[name] }} and price {{ item.price }} # can use both ways .price or [price]
+      loop:
+        - { name: carrot, price: 100 }
+        - { name: banana, price: 90 }
+        - { name: kale, price: 101 }
