@@ -1,3 +1,4 @@
+
 - name: Retrieve Vault password
   hosts: localhost
   connection: local
